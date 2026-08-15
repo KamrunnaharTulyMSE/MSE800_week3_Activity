@@ -1,0 +1,13 @@
+Attributes:
+
+Student: S_Phone_number, S_Address
+Subjects: Sub_name, Sub_description.
+Lecturer: L_phonenumber
+
+relationships: 
+
+Relationship between Student and Enrolment is one to many as a student can have multiple enrolments, while each enrolment belongs to a student.
+
+The relationship between Lecturer and Subjects is many to many because a lecturer can teach multiple subjects, and a subject can be taught by multiple lecturers.
+
+the relationship between Lecture and Subjects is many to one because a subject can have multiple lectures and each lecture is associated with one subject.
