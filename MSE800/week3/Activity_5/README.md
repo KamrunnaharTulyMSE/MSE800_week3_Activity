@@ -91,3 +91,46 @@ Foreign Key (FK):Refers to a primary key in another table and creates a relation
 - SQLite3
 - SQL
 - Object-Oriented Programming (OOP)
+
+
+## Class Diagram
+
+The following class diagram represents the main structure of the Money Exchange System.
+![Money Exchange Class Diagram](Class_Diagram.png)
+
+## Purpose of the Class Diagram
+
+The class diagram shows the main structure of the Money Exchange System, including its classes, attributes, methods, and relationships.
+
+## Main Classes
+
+### 1. Customer
+Stores customer information and manages customer details and transactions.
+
+### 2. Transaction
+Records currency exchange transactions, including amount, exchange rate, and converted amount.
+
+### 3. Currency
+Stores the currencies supported by the system.
+
+### 4. ExchangeRate
+Stores exchange rates between different currencies and provides rates for transactions.
+
+## Relationships Between Classes
+
+### Customer – Transaction
+One customer can make zero or many transactions.
+
+### Transaction – Currency
+A transaction uses one currency as the source and one currency as the destination.
+
+### Transaction – ExchangeRate
+A transaction uses an exchange rate to calculate the converted amount.
+
+## Overall System Functionality
+
+The system allows a customer to exchange one currency for another. It uses the selected currencies and exchange rate to calculate and record the transaction.
+
+## Summary
+
+One class diagram with four main classes—Customer, Transaction, Currency, and ExchangeRate—represents the core functionality of the Money Exchange System.
